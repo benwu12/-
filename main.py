@@ -8,7 +8,7 @@ floder_path = [
 ]
 for folder in floder_path:
     if folder.endswith(".photoslibrary"):
-        print(f"跳過 macOS 系統保護資料夾：{folder}")
+        print(f"跳過 macOS 系統保護資料夾：{folder}")    #因資料夾內有蘋果電腦圖庫的相關檔案，所以新增一個判斷式忽略相關檔案
         continue
 
     base = os.path.basename(folder)
